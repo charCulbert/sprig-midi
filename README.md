@@ -1,12 +1,12 @@
 # Sprig
 
-A small macOS menu bar app that gives you a floating keyboard, knobs and sliders, sending MIDI to whatever you have open.
+<img width="813" height="505" alt="image" src="https://github.com/user-attachments/assets/68522d23-873a-4934-96dd-258f92dfd5e4" />
 
-Handy when you want to play or tweak something without reaching for hardware:
 
-- Trying out a synth or plugin while you build a patch
-- Sketching ideas on a laptop away from your controller
-- Mapping a few CCs in your DAW without plugging anything in
+A small macOS menu bar app that gives you a floating keyboard, knobs and sliders, that can send MIDI to a specified output and channel. 
+
+I got tired of opening a DAW just to fire off a few test MIDI notes.
+
 
 ## Features
 
@@ -29,21 +29,15 @@ Build it yourself: clone with `--recursive` to get the [compost](https://github.
 git clone --recursive https://github.com/charCulbert/sprig-midi.git
 ```
 
-No special permissions are needed. Sprig only sends MIDI; it never reads any.
-
 ## Usage
 
-Click the knob icon in the menu bar to show or hide each window, and to choose the MIDI output and channel.
+Click the icon in the menu bar to show or hide each window, and to choose the MIDI output and channel.
 
 On the keyboard, drag the right edge to add keys upward and the left edge to set the lowest note. The ← and → buttons, or Z and X, move up and down an octave. The computer keys play notes while the keyboard window is focused.
 
 On the knobs and sliders, drag the side edges to add or remove columns. Drag the bottom edge of the sliders window to make them longer. Each control starts on its own CC: knobs on 21 to 36, sliders on 41 to 56.
 
-Choose **All Notes Off** in the menu if anything gets stuck.
-
-## Development
-
-Open `Sprig.xcodeproj` and press Run. The windows are web pages in a `WKWebView`, built from [compost](https://github.com/charCulbert/compost) components, and Swift does the windows, menu, state and CoreMIDI. A build step copies the pages into the app along with only the compost files they import.
+**All Notes Off** is available in the menu.
 
 ## License
 
