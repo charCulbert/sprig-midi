@@ -1,10 +1,9 @@
 # Sprig
 
-<img width="813" height="505" alt="image" src="https://github.com/user-attachments/assets/68522d23-873a-4934-96dd-258f92dfd5e4" />
-
-<img width="657" height="596" alt="image" src="https://github.com/user-attachments/assets/9d79eb18-2cf3-45cd-b1f6-03098656f632" />
-
-
+<p>
+<img height="280" alt="Sprig" src="https://github.com/user-attachments/assets/68522d23-873a-4934-96dd-258f92dfd5e4" />
+<img height="280" alt="Sprig" src="https://github.com/user-attachments/assets/9d79eb18-2cf3-45cd-b1f6-03098656f632" />
+</p>
 
 A small macOS menu bar app that gives you a floating keyboard, knobs and sliders, that can send MIDI to a specified output and channel. 
 
@@ -43,4 +42,4 @@ On the knobs and sliders, drag the side edges to add or remove columns. Drag the
 
 ## License
 
-GPL-3.0. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
