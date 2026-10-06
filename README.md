@@ -2,6 +2,9 @@
 
 <img width="813" height="505" alt="image" src="https://github.com/user-attachments/assets/68522d23-873a-4934-96dd-258f92dfd5e4" />
 
+<img width="657" height="596" alt="image" src="https://github.com/user-attachments/assets/9d79eb18-2cf3-45cd-b1f6-03098656f632" />
+
+
 
 A small macOS menu bar app that gives you a floating keyboard, knobs and sliders, that can send MIDI to a specified output and channel. 
 
@@ -35,8 +38,7 @@ Click the icon in the menu bar to show or hide each window, and to choose the MI
 
 On the keyboard, drag the right edge to add keys upward and the left edge to set the lowest note. The ← and → buttons, or Z and X, move up and down an octave. The computer keys play notes while the keyboard window is focused.
 
-On the knobs and sliders, drag the side edges to add or remove columns. Drag the bottom edge of the sliders window to make them longer. Each control starts on its own CC: knobs on 21 to 36, sliders on 41 to 56.
-
+On the knobs and sliders, drag the side edges to add or remove columns. Drag the bottom edge of the sliders window to make them longer. 
 **All Notes Off** is available in the menu.
 
 ## License
