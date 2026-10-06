@@ -1,4 +1,4 @@
-# Sprig
+# Sprig MIDI
 
 <p>
 <img height="280" alt="Sprig" src="https://github.com/user-attachments/assets/68522d23-873a-4934-96dd-258f92dfd5e4" />
