@@ -1,0 +1,71 @@
+/* palette and fonts from wclap-browser-daw styles/app.css */
+@font-face {
+	font-family: 'Schibsted Grotesk';
+	font-weight: 400 500;
+	src: url(./fonts/schibsted-grotesk.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-weight: 400;
+	src: url(./fonts/ibm-plex-mono-400.woff2) format('woff2');
+}
+
+:root {
+	/* color-scheme set by panel.js */
+	color-scheme: light dark;
+	--panel: light-dark(#e4e5e2, #0c0d0f);
+	--ink: light-dark(#171819, #e9eaeb); --ink2: light-dark(#343638, #cacccd);
+	--dim: light-dark(#5c6063, #8c8f92); --faint: light-dark(#62666a, #767a7e); --ghost: light-dark(#bfc1bf, #323437);
+	--edge: light-dark(rgba(0, 0, 0, .22), rgba(255, 255, 255, .15));
+	--sel: light-dark(#276fae, #6aa9e0); --val: light-dark(#76500f, #e6c28c);
+	--sig: rgb(230, 220, 198);
+	--compost-accent: var(--sel);
+	--arc: light-dark(var(--ink2), var(--sig));
+	--mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+	--ui: 'Schibsted Grotesk', system-ui, sans-serif; --uiLS: .006em;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 11px; }
+html, body { height: 100%; }
+body {
+	margin: 0; background: transparent; color: var(--ink);
+	font: 400 1rem/1.4 var(--ui); letter-spacing: var(--uiLS); font-variant-numeric: tabular-nums;
+	-webkit-font-smoothing: antialiased; overflow: hidden; -webkit-user-select: none; user-select: none;
+}
+button {
+	appearance: none; border: 0; background: none; color: inherit; font: inherit;
+	padding: 0; cursor: pointer;
+}
+
+compost-window {
+	--compost-window-bg: var(--panel);
+	--compost-window-text: var(--ink);
+	--compost-window-muted: var(--dim);
+	--compost-window-border: var(--edge);
+	--compost-window-header-height: 1.818rem;
+	--compost-window-header-font-size: 0.818rem;
+	--compost-window-close-color: var(--faint);
+	--compost-window-close-hover-color: var(--ink);
+	--compost-window-focus: var(--sel);
+	--compost-window-control-min: var(--compost-window-header-height);
+}
+compost-window::part(header) { box-shadow: inset 0 -1px 0 var(--ghost); }
+compost-window::part(title) { letter-spacing: .02em; }
+
+.hd { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 9px; white-space: nowrap; overflow: hidden; }
+.hd b { font-weight: 400; color: var(--ink); }
+.hd .sub { overflow: hidden; text-overflow: ellipsis; }
+.hd .mono { font-family: var(--mono); letter-spacing: 0; color: var(--faint); }
+.hd .tool { color: var(--dim); padding: 0 3px; font-family: var(--mono); }
+.hd .tool:hover { color: var(--ink); }
+
+.grip { position: absolute; z-index: 3; touch-action: none; }
+.grip.l, .grip.r { top: 0; bottom: 0; width: 8px; cursor: ew-resize; }
+.grip.l { left: 0; } .grip.r { right: 0; }
+.grip.b { left: 8px; right: 8px; bottom: 0; height: 6px; cursor: ns-resize; }
+.grip.l::after, .grip.r::after {
+	content: ''; position: absolute; top: 22%; bottom: 22%; left: 3px; width: 2px;
+	background: var(--faint); opacity: 0; transition: opacity .12s;
+}
+.grip.l:hover::after, .grip.r:hover::after { opacity: .7; }

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Keyboard</title>
+	<link rel="stylesheet" href="./theme.css">
+	<style>
+		compost-piano {
+			display: block; width: 100%; height: 100%; font-size: 16px; overflow: hidden;
+			--compost-piano-height: 100%; --compost-piano-line: #333; --compost-piano-muted: grey;
+			--compost-piano-accent: var(--sig);
+		}
+		compost-piano:focus { outline: none; }
+	</style>
+	<script type="module" src="./keyboard.js"></script>
+</head>
+<body>
+	<compost-window open fullscreen>
+		<span slot="title" class="hd">
+			<b>Keyboard</b><span class="sub" id="output"></span><span class="mono" id="range"></span>
+			<button class="tool" id="down" type="button" aria-label="Down one octave" title="octave down  z">←</button>
+			<button class="tool" id="up" type="button" aria-label="Up one octave" title="octave up  x">→</button>
+		</span>
+		<compost-piano root-note="36" note-count="25" inline></compost-piano>
+	</compost-window>
+</body>
+</html>

@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E051F4C8D9D2B6CF16957F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1900DA7DCF824053FC557D /* Assets.xcassets */; };
+		022F0FC6B8CFE58D7DBAA362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA00FDB79EBA31565F7775 /* AppDelegate.swift */; };
+		93AE0402901818C510DF4846 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EC21C6443E0E371D116A3 /* MIDIManager.swift */; };
+		CD2DE3C8245D8A8DE842BD6B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01936B778B0A2081CE0B5B7 /* WebKit.framework */; };
+		072376AE878ED169458D6622 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2949D606F2634EE157366A70 /* CoreMIDI.framework */; };
+		3F9E59E647CDC7641506825B /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191D4F8A3435D248BADE6D1 /* Controller.swift */; };
+		CEDE032305327454DE21B69C /* WebPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743FD90908291BD0A0D0F9C /* WebPanel.swift */; };
+		6CB87165D48EF066EED6E3B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386373651EDB18A460871D26 /* main.swift */; };
+		54E939A8635A346664A16426 /* AppResourceSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A18E14CDE4FF864334B92 /* AppResourceSchemeHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD1900DA7DCF824053FC557D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B58A5AF9A0EDB4C31734B3 /* Sprig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDA00FDB79EBA31565F7775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		728EC21C6443E0E371D116A3 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		084DA2AE8F71E238701DB30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01936B778B0A2081CE0B5B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2949D606F2634EE157366A70 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		6191D4F8A3435D248BADE6D1 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		B743FD90908291BD0A0D0F9C /* WebPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPanel.swift; sourceTree = "<group>"; };
+		386373651EDB18A460871D26 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		497A18E14CDE4FF864334B92 /* AppResourceSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResourceSchemeHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D752D6FFDD0127258A0507A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2DE3C8245D8A8DE842BD6B /* WebKit.framework in Frameworks */,
+				072376AE878ED169458D6622 /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3C787B924128C001CC2DD61 = {
+			isa = PBXGroup;
+			children = (
+				9BE39C71BB5C50A651A07B42 /* Sprig */,
+				8386FA4DDE78B2BB9CA21CF9 /* Frameworks */,
+				F1C70E9584431730DB91D452 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BE39C71BB5C50A651A07B42 /* Sprig */ = {
+			isa = PBXGroup;
+			children = (
+				386373651EDB18A460871D26 /* main.swift */,
+				5FDA00FDB79EBA31565F7775 /* AppDelegate.swift */,
+				497A18E14CDE4FF864334B92 /* AppResourceSchemeHandler.swift */,
+				6191D4F8A3435D248BADE6D1 /* Controller.swift */,
+				728EC21C6443E0E371D116A3 /* MIDIManager.swift */,
+				B743FD90908291BD0A0D0F9C /* WebPanel.swift */,
+				084DA2AE8F71E238701DB30D /* Info.plist */,
+				FD1900DA7DCF824053FC557D /* Assets.xcassets */,
+				3E3EACA3100FADC600085F15 /* Web */,
+			);
+			path = Sprig;
+			sourceTree = "<group>";
+		};
+		3E3EACA3100FADC600085F15 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		8386FA4DDE78B2BB9CA21CF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B01936B778B0A2081CE0B5B7 /* WebKit.framework */,
+				2949D606F2634EE157366A70 /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1C70E9584431730DB91D452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9B58A5AF9A0EDB4C31734B3 /* Sprig.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDFD74B04750DFFFA7B85BA9 /* Sprig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABF26359A04758146B681ED /* Build configuration list for PBXNativeTarget "Sprig" */;
+			buildPhases = (
+				A97B9DC0C99100716C5B3FAF /* Sources */,
+				4D752D6FFDD0127258A0507A /* Frameworks */,
+				F46BF6C9CD7879994FC31776 /* Resources */,
+				01F5D23491B8F1BB94ED7E60 /* Copy Web */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sprig;
+			productName = Sprig;
+			productReference = B9B58A5AF9A0EDB4C31734B3 /* Sprig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE639E9433D79FDED3A1A3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					DDFD74B04750DFFFA7B85BA9 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = FAC3020FF2E600E3AF1C820F /* Build configuration list for PBXProject "Sprig" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3C787B924128C001CC2DD61;
+			productRefGroup = F1C70E9584431730DB91D452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDFD74B04750DFFFA7B85BA9 /* Sprig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F46BF6C9CD7879994FC31776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E051F4C8D9D2B6CF16957F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F5D23491B8F1BB94ED7E60 /* Copy Web */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Web";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/bundle-web.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97B9DC0C99100716C5B3FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB87165D48EF066EED6E3B1 /* main.swift in Sources */,
+				022F0FC6B8CFE58D7DBAA362 /* AppDelegate.swift in Sources */,
+				54E939A8635A346664A16426 /* AppResourceSchemeHandler.swift in Sources */,
+				3F9E59E647CDC7641506825B /* Controller.swift in Sources */,
+				93AE0402901818C510DF4846 /* MIDIManager.swift in Sources */,
+				CEDE032305327454DE21B69C /* WebPanel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A592AF044A7E8D611EC8FF4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54219442F65F119240AACAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A1242C02FA2CEB62625EF593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sprig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlieculbert.Sprig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6991D710200853599DD382F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sprig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlieculbert.Sprig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC3020FF2E600E3AF1C820F /* Build configuration list for PBXProject "Sprig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A592AF044A7E8D611EC8FF4A /* Debug */,
+				54219442F65F119240AACAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABF26359A04758146B681ED /* Build configuration list for PBXNativeTarget "Sprig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1242C02FA2CEB62625EF593 /* Debug */,
+				6991D710200853599DD382F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE639E9433D79FDED3A1A3F /* Project object */;
+}

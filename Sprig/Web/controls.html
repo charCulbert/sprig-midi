@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Controls</title>
+	<link rel="stylesheet" href="./theme.css">
+	<style>
+		.bank {
+			--column: 58px;
+			display: grid; grid-auto-flow: column; grid-auto-columns: var(--column);
+			height: 100%; padding: 10px 8px 8px;
+		}
+		[data-layout="knobs"] .bank { height: auto; }
+		[data-layout="knobs"] .grip.b { display: none; }
+		.strip { display: flex; flex-direction: column; align-items: center; gap: 2px; min-height: 0; }
+		.strip + .strip { box-shadow: inset 1px 0 0 var(--ghost); }
+		.slot { flex: 1 1 0; min-height: 0; display: flex; justify-content: center; align-items: flex-start; margin-top: 6px; }
+		.cc { font: 9px/1 var(--mono); color: var(--faint); }
+		compost-knob, compost-slider { color: var(--ink2); font-size: 9px; --compost-accent: var(--arc); }
+		compost-knob::part(value), compost-slider::part(value) { color: var(--val); font-family: var(--mono); }
+		compost-slider { --slider-vertical-width: 100%; --slider-vertical-length: var(--length, 9em); }
+		compost-slider::part(track) { background: var(--ghost); }
+		compost-slider::part(thumb) { background: var(--ink); }
+	</style>
+	<script type="module" src="./controls.js"></script>
+</head>
+<body>
+	<compost-window open fullscreen>
+		<span slot="title" class="hd">
+			<b>Controls</b><span class="sub" id="output"></span><span class="mono" id="channel"></span>
+		</span>
+		<div class="bank"></div>
+	</compost-window>
+</body>
+</html>
