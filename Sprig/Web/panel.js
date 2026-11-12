@@ -41,7 +41,8 @@ export function connectWindow(win) {
 		button.className = 'tool';
 		button.type = 'button';
 		button.textContent = label;
-		button.title = step < 0 ? 'smaller  ⌘−' : 'bigger  ⌘+';
+		button.setAttribute('aria-label', step < 0 ? 'Zoom out' : 'Zoom in');
+		button.title = step < 0 ? 'zoom out  ⌘−' : 'zoom in  ⌘+';
 		button.addEventListener('click', () => post({ type: 'zoom', step }));
 		win.querySelector('.hd').append(button);
 	}

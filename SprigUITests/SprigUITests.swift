@@ -185,10 +185,10 @@ final class SprigUITests: XCTestCase {
         XCTAssertEqual(number(unpin), 1)
 
         let width = keyboard.frame.width
-        keyboard.buttons["+"].click()
+        keyboard.buttons["Zoom in"].click()
         let grown = NSPredicate { _, _ in keyboard.frame.width > width * 1.05 }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: grown, object: nil)], timeout: 5), .completed,
-                       "+ should make the window bigger")
+                       "Zoom in should make the window bigger")
         let zoomedWidth = keyboard.frame.width
 
         relaunchKeepingState()
