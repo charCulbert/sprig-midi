@@ -7,7 +7,7 @@
 
 A small macOS menu bar app that gives you a floating keyboard, knobs and sliders, that can send MIDI to a specified output and channel. 
 
-I got tired of opening a DAW just to fire off a few test MIDI notes.
+This is often a bit quicker than opening up a DAW just to fire off a few test MIDI notes.
 
 
 ## Features

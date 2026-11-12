@@ -43,6 +43,21 @@ struct AppState: Codable {
 
 final class Controller: NSObject {
     private static let stateKey = "state"
+
+    // UI tests launch with `--state-suite NAME` so they never touch the real settings,
+    // and add `--reset-state` to start from defaults
+    private static let defaults: UserDefaults = {
+        let arguments = CommandLine.arguments
+        var defaults = UserDefaults.standard
+        if let index = arguments.firstIndex(of: "--state-suite"), index + 1 < arguments.count,
+           let suite = UserDefaults(suiteName: arguments[index + 1]) {
+            defaults = suite
+        }
+        if arguments.contains("--reset-state") {
+            defaults.removeObject(forKey: stateKey)
+        }
+        return defaults
+    }()
     private static let noteVelocity: UInt8 = 100
 
     private(set) var state: AppState
@@ -57,7 +72,7 @@ final class Controller: NSObject {
 
     private static func load() -> AppState? {
         guard
-            let data = UserDefaults.standard.data(forKey: stateKey),
+            let data = defaults.data(forKey: stateKey),
             let saved = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
             let defaults = try? JSONSerialization.jsonObject(with: JSONEncoder().encode(AppState())) as? [String: Any],
             let merged = try? JSONSerialization.data(withJSONObject: defaults.merging(saved) { $1 })
@@ -265,7 +280,7 @@ final class Controller: NSObject {
         pendingSave?.cancel()
         pendingSave = nil
         if let data = try? JSONEncoder().encode(state) {
-            UserDefaults.standard.set(data, forKey: Self.stateKey)
+            Self.defaults.set(data, forKey: Self.stateKey)
         }
     }
 

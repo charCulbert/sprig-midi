@@ -18,7 +18,8 @@ let specsKey = '';
 let specs = [];
 
 document.body.dataset.layout = kind;
-document.querySelector('.hd b').textContent = kind === 'knobs' ? 'Knobs' : 'Sliders';
+document.title = kind === 'knobs' ? 'Knobs' : 'Sliders';
+document.querySelector('.hd b').textContent = document.title;
 
 const columnWidth = () => parseFloat(getComputedStyle(bank).getPropertyValue('--column'));
 const bankPadding = () => {
@@ -65,7 +66,9 @@ function render() {
 		}
 		return strip;
 	}));
+	// registering a control resets it to its default, so restore the saved values after
 	parameters.refresh();
+	for (const spec of specs.slice(0, columns)) parameters.applyValue(spec.id, spec.value, { source: 'host' });
 	slotObserver.disconnect();
 	const slot = bank.querySelector('.slot');
 	if (slot) slotObserver.observe(slot);
