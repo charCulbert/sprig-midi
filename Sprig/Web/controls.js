@@ -18,7 +18,8 @@ let specsKey = '';
 let specs = [];
 
 document.body.dataset.layout = kind;
-document.querySelector('.hd b').textContent = kind === 'knobs' ? 'Knobs' : 'Sliders';
+document.title = kind === 'knobs' ? 'Knobs' : 'Sliders';
+document.querySelector('.hd b').textContent = document.title;
 
 const columnWidth = () => parseFloat(getComputedStyle(bank).getPropertyValue('--column'));
 const bankPadding = () => {
