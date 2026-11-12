@@ -65,7 +65,9 @@ function render() {
 		}
 		return strip;
 	}));
+	// registering a control resets it to its default, so restore the saved values after
 	parameters.refresh();
+	for (const spec of specs.slice(0, columns)) parameters.applyValue(spec.id, spec.value, { source: 'host' });
 	slotObserver.disconnect();
 	const slot = bank.querySelector('.slot');
 	if (slot) slotObserver.observe(slot);
